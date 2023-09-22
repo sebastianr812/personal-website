@@ -96,49 +96,44 @@ function Article({ article }) {
     </Card>
   )
 }
+const articles = [
+  {
+    title: 'Deliberate Practice — The Fastest Way to Improve Your Skills',
+    date: '2020-01-29',
+    description: `You may have heard that it takes 10,000 hours to master a skill. But you can try any 
+    new skill in 1 hour. You can learn some of the basics in 10 hours. You can become very good in 100 hours. And you can become 
+    amazing in most skills, if you spend 1000 hours of quality practice. How far you want to develop your skill, depends on your 
+    commitment to put in quality practice.`,
+    // TODO: add href to each in order to have link to article
+  },
+  {
+    title: 'Ready to Flow? Everything you need to know about Flow States',
+    date: '2020-10-02',
+    description: `The term “Flow” was coined by Hungarian-American psychologist, Mihaly Csikszentmihalyi, in 1975. 
+    After interviewing numerous people about this unique mindset—one that causes them to become fully absorbed in 
+    their work—he chose an image of water carrying a person along to represent the feeling one feels while in Flow.`,
+  },
+  {
+    title: 'The Developer’s Edge: How To Become A Senior Developer',
+    date: '2017-03-03',
+    description: `These are the 6 core skills that you need to be considered a senior developer. And the steps and 
+    resources to get them.`,
+  },
+]
 
 function SocialLink({ icon: Icon, ...props }) {
   return (
-    <Link className="group -m-1 p-1" {...props}>
+    <Link target="_blank" className="group -m-1 p-1" {...props}>
       <Icon className="h-6 w-6 fill-zinc-500 transition group-hover:fill-zinc-600 dark:fill-zinc-400 dark:group-hover:fill-zinc-300" />
     </Link>
-  )
-}
-
-function Newsletter() {
-  return (
-    <form
-      action="/thank-you"
-      className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40"
-    >
-      <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
-        <MailIcon className="h-6 w-6 flex-none" />
-        <span className="ml-3">Stay up to date</span>
-      </h2>
-      <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
-        Get notified when I publish something new, and unsubscribe at any time.
-      </p>
-      <div className="mt-6 flex">
-        <input
-          type="email"
-          placeholder="Email address"
-          aria-label="Email address"
-          required
-          className="min-w-0 flex-auto appearance-none rounded-md border border-zinc-900/10 bg-white px-3 py-[calc(theme(spacing.2)-1px)] shadow-md shadow-zinc-800/5 placeholder:text-zinc-400 focus:border-teal-500 focus:outline-none focus:ring-4 focus:ring-teal-500/10 dark:border-zinc-700 dark:bg-zinc-700/[0.15] dark:text-zinc-200 dark:placeholder:text-zinc-500 dark:focus:border-teal-400 dark:focus:ring-teal-400/10 sm:text-sm"
-        />
-        <Button type="submit" className="ml-4 flex-none">
-          Join
-        </Button>
-      </div>
-    </form>
   )
 }
 
 function Resume() {
   let resume = [
     {
-      company: 'Planetaria',
-      title: 'CEO',
+      company: `Sesons Catering & Special Events`,
+      title: 'Set Up Person',
       logo: logoPlanetaria,
       start: '2019',
       end: {
@@ -147,25 +142,28 @@ function Resume() {
       },
     },
     {
-      company: 'Airbnb',
-      title: 'Product Designer',
+      company: 'Airbnb-Clone',
+      title: 'Developer',
       logo: logoAirbnb,
-      start: '2014',
-      end: '2019',
+      start: '2022',
     },
     {
-      company: 'Facebook',
-      title: 'iOS Software Engineer',
+      company: 'Discord-Cloe',
+      title: 'Developer',
       logo: logoFacebook,
-      start: '2011',
-      end: '2014',
+      start: '2023',
     },
     {
-      company: 'Starbucks',
-      title: 'Shift Supervisor',
+      company: 'Ecommerce-CMS',
+      title: 'Developer',
       logo: logoStarbucks,
-      start: '2008',
-      end: '2011',
+      start: '2023',
+    },
+    {
+      company: 'Crown-Clothing',
+      title: 'Developer',
+      logo: logoStarbucks,
+      start: '2023',
     },
   ]
 
@@ -173,7 +171,7 @@ function Resume() {
     <div className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
       <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
         <BriefcaseIcon className="h-6 w-6 flex-none" />
-        <span className="ml-3">Work</span>
+        <span className="ml-3">Experience / Projects</span>
       </h2>
       <ol className="mt-6 space-y-4">
         {resume.map((role, roleIndex) => (
@@ -194,24 +192,22 @@ function Resume() {
               <dd
                 className="ml-auto text-xs text-zinc-400 dark:text-zinc-500"
                 aria-label={`${role.start.label ?? role.start} until ${
-                  role.end.label ?? role.end
+                  role.end ? role.end.label : ''
                 }`}
               >
                 <time dateTime={role.start.dateTime ?? role.start}>
                   {role.start.label ?? role.start}
                 </time>{' '}
-                <span aria-hidden="true">—</span>{' '}
-                <time dateTime={role.end.dateTime ?? role.end}>
-                  {role.end.label ?? role.end}
-                </time>
+                <span aria-hidden="true">{role.end ? '-' : ''}</span>{' '}
+                <time>{role.end ? role.end.label : ''}</time>
               </dd>
             </dl>
           </li>
         ))}
       </ol>
       <Button href="#" variant="secondary" className="group mt-6 w-full">
-        Download CV
-        <ArrowDownIcon className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50" />
+        Open Resume
+        <ArrowDownIcon className="h-4 w-4 stroke-zinc-400 stroke-1 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50" />
       </Button>
     </div>
   )
@@ -245,39 +241,31 @@ function Photos() {
 }
 
 export default async function Home() {
-  let articles = (await getAllArticles()).slice(0, 4)
+  // let articles = (await getAllArticles()).slice(0, 4)
 
   return (
     <>
       <Container className="mt-9">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-            Software designer, founder, and amateur astronaut.
+            Software engineer, eternal student, and cat dad
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I’m Spencer, a software designer and entrepreneur based in New York
-            City. I’m the founder and CEO of Planetaria, where we develop
-            technologies that empower regular people to explore space on their
-            own terms.
+            I'm Sebastian Rojas, a software engineer based in Northern New
+            Jersey. My passion for web development stems from my natural
+            curiosity to learn and the appreciation of the different
+            technologies that must meticulasly chosen and work together in order
+            to create a software application.
           </p>
           <div className="mt-6 flex gap-6">
+            <SocialLink icon={MailIcon} href="/" />
             <SocialLink
-              href="https://twitter.com"
-              aria-label="Follow on Twitter"
-              icon={TwitterIcon}
-            />
-            <SocialLink
-              href="https://instagram.com"
-              aria-label="Follow on Instagram"
-              icon={InstagramIcon}
-            />
-            <SocialLink
-              href="https://github.com"
+              href="https://github.com/sebastianr812"
               aria-label="Follow on GitHub"
               icon={GitHubIcon}
             />
             <SocialLink
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/sebastian-rojas-ruiz-812013200/"
               aria-label="Follow on LinkedIn"
               icon={LinkedInIcon}
             />
@@ -286,6 +274,9 @@ export default async function Home() {
       </Container>
       <Photos />
       <Container className="mt-24 md:mt-28">
+        <h2 className="mb-[25px] text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
+          Articles I find interesting
+        </h2>
         <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
           <div className="flex flex-col gap-16">
             {articles.map((article) => (
@@ -293,7 +284,6 @@ export default async function Home() {
             ))}
           </div>
           <div className="space-y-10 lg:pl-16 xl:pl-24">
-            <Newsletter />
             <Resume />
           </div>
         </div>
