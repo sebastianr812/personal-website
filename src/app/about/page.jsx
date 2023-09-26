@@ -10,6 +10,7 @@ import {
   TwitterIcon,
 } from '@/components/SocialIcons'
 import portraitImage from '@/images/portrait.jpg'
+import ikigaiImage from '@/images/photos/ikigai.webp'
 
 function SocialLink({ className, href, children, icon: Icon }) {
   return (
@@ -47,61 +48,90 @@ export default function About() {
     <Container className="mt-16 sm:mt-32">
       <div className="grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12">
         <div className="lg:pl-20">
-          <div className="max-w-xs px-2.5 lg:max-w-none">
+          <div className="max-w-xs space-y-8 px-2.5 lg:max-w-none">
             <Image
               src={portraitImage}
               alt=""
               sizes="(min-width: 1024px) 32rem, 20rem"
               className="aspect-square rotate-3 rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"
             />
+            <Image
+              src={ikigaiImage}
+              alt="Ikigai Image"
+              sizes="(min-width: 1024px) 32rem, 20 rem"
+              className="aspect-square -rotate-3 rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"
+            />
           </div>
         </div>
         <div className="lg:order-first lg:row-span-2">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-            I’m Spencer Sharp. I live in New York City, where I design the
-            future.
+            I'm Sebastian Rojas. I live in New Jersey and love to learn.
           </h1>
           <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
             <p>
-              I’ve loved making things for as long as I can remember, and wrote
-              my first program when I was 6 years old, just two weeks after my
-              mom brought home the brand new Macintosh LC 550 that I taught
-              myself to type on.
+              I was born in Passaic, New Jersey and at the age of 4 my parents
+              bought me my first computer. The story goes like this: we were
+              walking around in Micro Center or PC Richard & Sons and while
+              walking down an isle filled with computers side by side, I ran up
+              to one of them and begged my parents to get it for me. The look of
+              pure joy when telling my parents how badly I wanted this computer
+              was enough for them to ask some family members if they can pitch
+              in for the computer. I vividly remember playing Brother Bear and
+              math games and had the most fun.
             </p>
             <p>
-              The only thing I loved more than computers as a kid was space.
-              When I was 8, I climbed the 40-foot oak tree at the back of our
-              yard while wearing my older sister’s motorcycle helmet, counted
-              down from three, and jumped — hoping the tree was tall enough that
-              with just a bit of momentum I’d be able to get to orbit.
+              Through the years, I continued playing video games, got an email
+              (which I still have to this day), I got to experience Aol
+              Messenger and the beginnings of Facebook and Youtube. Fast forward
+              to 2020 and this is where my passion for computer programming /
+              web development started. I was searching on Google "best jobs in
+              2020" and found software engineering to be a common answer between
+              the articles I read. After further researching, I began to use
+              online resouces to learn how to code. Free Code Camp and the Odin
+              Project taught me the basics of HTML, CSS, and Javascript and this
+              is where I felt something different than normally learning
+              something new. I liken it to finally being able to scratch an
+              itch, letting out a big sneeze that was bothering you, or how your
+              body feels diectly after an intense workout. I felt challeneged
+              but also excited because I knew I was only at the tip of the
+              iceberg. I told myself I would code everyday and through
+              deliberate practice improve with each iteration.
             </p>
             <p>
-              I spent the next few summers indoors working on a rocket design,
-              while I recovered from the multiple surgeries it took to fix my
-              badly broken legs. It took nine iterations, but when I was 15 I
-              sent my dad’s Blackberry into orbit and was able to transmit a
-              photo back down to our family computer from space.
+              I continued my web development journey learning React as well as
+              other technologies essential to creating complex applications
+              like: Postgresql / MogoDB, Docker, Redis, Jest / Vitest, CI / CD,
+              etc. In my opinion, coding is beautiful because it forces you to
+              peceive problems / obstacles differently, break them down into
+              manageable pieces, and create abstractions. Coding has altered the
+              way I see the world and see common patterns found in coding in the
+              real world. Besides being on the computer, I enjoy going on walks
+              with my girlfriend, working out, playing with our cats Blu and
+              Salem, reading, and trying new restaurants.
             </p>
             <p>
-              Today, I’m the founder of Planetaria, where we’re working on
-              civilian space suits and manned shuttle kits you can assemble at
-              home so that the next generation of kids really <em>can</em> make
-              it to orbit — from the comfort of their own backyards.
+              There is Japanese saying: 生きがい or Ikigai - it roughly
+              translates to your reason for being or your bliss. It can be
+              described as the action that combines what you are good at, love,
+              what the world needs and what you can be compensated for. I
+              beleive coding is my <strong>Ikigai</strong>
             </p>
           </div>
         </div>
         <div className="lg:pl-20">
           <ul role="list">
-            <SocialLink href="#" icon={TwitterIcon}>
-              Follow on Twitter
-            </SocialLink>
-            <SocialLink href="#" icon={InstagramIcon} className="mt-4">
-              Follow on Instagram
-            </SocialLink>
-            <SocialLink href="#" icon={GitHubIcon} className="mt-4">
+            <SocialLink
+              href="http://github.com/sebastianr812"
+              icon={GitHubIcon}
+              className="mt-4"
+            >
               Follow on GitHub
             </SocialLink>
-            <SocialLink href="#" icon={LinkedInIcon} className="mt-4">
+            <SocialLink
+              href="https://www.linkedin.com/in/sebastian-rojas-ruiz-812013200/"
+              icon={LinkedInIcon}
+              className="mt-4"
+            >
               Follow on LinkedIn
             </SocialLink>
             <SocialLink
@@ -109,7 +139,7 @@ export default function About() {
               icon={MailIcon}
               className="mt-8 border-t border-zinc-100 pt-8 dark:border-zinc-700/40"
             >
-              spencer@planetaria.tech
+              sebatian.rojas.dev@gmal.com
             </SocialLink>
           </ul>
         </div>

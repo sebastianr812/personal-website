@@ -10,10 +10,13 @@ import {
   InstagramIcon,
   LinkedInIcon,
   TwitterIcon,
+  DiscordIcon,
 } from '@/components/SocialIcons'
 import logoAirbnb from '@/images/logos/airbnb.svg'
-import logoFacebook from '@/images/logos/facebook.svg'
+import logoDiscord from '@/images/logos/discord.svg'
+import logoCrownClothing from '@/images/logos/crown-clothing.svg'
 import logoPlanetaria from '@/images/logos/planetaria.svg'
+import logoCms from '@/images/logos/cms.svg'
 import logoStarbucks from '@/images/logos/starbucks.svg'
 import image1 from '@/images/photos/image-1.jpg'
 import image2 from '@/images/photos/image-2.jpg'
@@ -85,9 +88,7 @@ function ArrowDownIcon(props) {
 function Article({ article }) {
   return (
     <Card as="article">
-      <Card.Title href={`/articles/${article.slug}`}>
-        {article.title}
-      </Card.Title>
+      <Card.Title href={article.href}>{article.title}</Card.Title>
       <Card.Eyebrow as="time" dateTime={article.date} decorate>
         {formatDate(article.date)}
       </Card.Eyebrow>
@@ -104,7 +105,7 @@ const articles = [
     new skill in 1 hour. You can learn some of the basics in 10 hours. You can become very good in 100 hours. And you can become 
     amazing in most skills, if you spend 1000 hours of quality practice. How far you want to develop your skill, depends on your 
     commitment to put in quality practice.`,
-    // TODO: add href to each in order to have link to article
+    href: 'https://hamre-erik.medium.com/deliberate-practice-the-fastest-way-to-improve-your-skills-c98c32521dee',
   },
   {
     title: 'Ready to Flow? Everything you need to know about Flow States',
@@ -112,12 +113,14 @@ const articles = [
     description: `The term “Flow” was coined by Hungarian-American psychologist, Mihaly Csikszentmihalyi, in 1975. 
     After interviewing numerous people about this unique mindset—one that causes them to become fully absorbed in 
     their work—he chose an image of water carrying a person along to represent the feeling one feels while in Flow.`,
+    href: 'https://medium.com/centered-blog/ready-to-flow-everything-you-need-to-know-about-flow-states-432b5d4a7f2d',
   },
   {
     title: 'The Developer’s Edge: How To Become A Senior Developer',
     date: '2017-03-03',
     description: `These are the 6 core skills that you need to be considered a senior developer. And the steps and 
     resources to get them.`,
+    href: 'https://zerotomastery.io/blog/developers-edge-how-to-become-a-senior-developer/?utm_source=medium&utm_medium=developers-edge',
   },
 ]
 
@@ -148,21 +151,21 @@ function Resume() {
       start: '2022',
     },
     {
-      company: 'Discord-Cloe',
+      company: 'Discord-Clone',
       title: 'Developer',
-      logo: logoFacebook,
+      logo: logoDiscord,
       start: '2023',
     },
     {
       company: 'Ecommerce-CMS',
       title: 'Developer',
-      logo: logoStarbucks,
+      logo: logoCms,
       start: '2023',
     },
     {
       company: 'Crown-Clothing',
       title: 'Developer',
-      logo: logoStarbucks,
+      logo: logoCrownClothing,
       start: '2023',
     },
   ]
@@ -254,8 +257,8 @@ export default async function Home() {
             I'm Sebastian Rojas, a software engineer based in Northern New
             Jersey. My passion for web development stems from my natural
             curiosity to learn and the appreciation of the different
-            technologies that must meticulasly chosen and work together in order
-            to create a software application.
+            technologies that must be meticulasly chosen and work together in
+            order to create a software application.
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink icon={MailIcon} href="/" />
