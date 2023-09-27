@@ -139,7 +139,7 @@ export default function About() {
               icon={MailIcon}
               className="mt-8 border-t border-zinc-100 pt-8 dark:border-zinc-700/40"
             >
-              sebatian.rojas.dev@gmal.com
+              sebatian.rojas.dev@gmal.comm
             </SocialLink>
           </ul>
         </div>
@@ -147,3 +147,4 @@ export default function About() {
     </Container>
   )
 }
+
