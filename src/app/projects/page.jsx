@@ -4,45 +4,62 @@ import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
 import logoAnimaginary from '@/images/logos/animaginary.svg'
 import logoCosmos from '@/images/logos/cosmos.svg'
-import logoHelioStream from '@/images/logos/helio-stream.svg'
-import logoOpenShuttle from '@/images/logos/open-shuttle.svg'
 import logoPlanetaria from '@/images/logos/planetaria.svg'
+import logoAirbnb from '@/images/logos/airbnb.svg'
+import logoDiscord from '@/images/logos/discord.svg'
 
 const projects = [
   {
-    name: 'Planetaria',
+    name: 'E-Commerce Admin CMS',
     description:
-      'Creating technology to empower civilians to explore space on their own terms.',
-    link: { href: 'http://planetaria.tech', label: 'planetaria.tech' },
+      `Content management system which allows store owners to add collections,
+      set items for sale for the collections and have the consumer website 
+      update accordingly`,
+    link: { 
+        href: 'https://ecommerce-admin-pi-olive.vercel.app/', 
+        label: 'e-commerce-admin.app' 
+    },
     logo: logoPlanetaria,
   },
   {
-    name: 'Animaginary',
+    name: 'Crown-Clothing',
     description:
-      'High performance web animation library, hand-written in optimized WASM.',
-    link: { href: '#', label: 'github.com' },
+      `Front-end website linked to the CMS, allows users to view products,
+      add items to their cart and checkout using Stripe`,
+    link: { 
+        href: 'https://ecommerce-store-olive.vercel.app/', 
+        label: 'e-commerce-store.app' 
+    },
     logo: logoAnimaginary,
   },
   {
-    name: 'HelioStream',
+    name: 'Airbnb-Clone',
     description:
-      'Real-time video streaming library, optimized for interstellar transmission.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoHelioStream,
+      `Clone of the Airbnb website features include: filtering properties
+      based on categories, availibility, and amount of guests allowed. 
+      Homeowners are allowed to upload a property and set dates available for
+      rent. Users are able to favorite a property and have them saved for 
+      future reference as welll as renting a property using Stripe.
+      `,
+    link: { 
+        href: 'https://rental-clone-six.vercel.app/',
+        label: 'airbnb-clone.app' 
+    },
+    logo: logoAirbnb,
   },
   {
-    name: 'cosmOS',
+    name: 'Discord-Clone',
     description:
-      'The operating system that powers our Planetaria space shuttles.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoCosmos,
-  },
-  {
-    name: 'OpenShuttle',
-    description:
-      'The schematics for the first rocket I designed that successfully made it to orbit.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoOpenShuttle,
+      `Clone of the popular chat application Discord. Web app allows users
+      to interact in realtime. Users can create servers, create channels within
+      a server and modify the type of the channel: text, audio, video. Besides
+      communicating in channels, users can have one on one conversations and have
+      infinite scrolling capabilities for an optimized user experience.`,
+    link: {
+        href: '#',
+        label: 'discord-clone.app' 
+    },
+    logo: logoDiscord,
   },
 ]
 
