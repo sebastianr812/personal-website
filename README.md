@@ -13,3 +13,33 @@ about me as well as some of my proudest projects.
 - Redis 
 - Docker
 - Jest / Vitest
+
+### About me
+
+I was born in Passaic, New Jersey and at the age of 4 my parents
+bought me my first computer. The story goes like this: we were
+walking around in Micro Center or PC Richard & Sons and while
+walking down an isle filled with computers side by side, I ran up
+to one of them and begged my parents to get it for me. The look of
+pure joy when telling my parents how badly I wanted this computer
+was enough for them to ask some family members if they can pitch
+in for the computer. I vividly remember playing Brother Bear and
+math games and had the most fun.
+
+
+Through the years, I continued playing video games, got an email
+        (which I still have to this day), I got to experience Aol
+        Messenger and the beginnings of Facebook and Youtube. Fast forward
+        to 2020 and this is where my passion for computer programming /
+        web development started. I was searching on Google "best jobs in
+        2020" and found software engineering to be a common answer between
+        the articles I read. After further researching, I began to use
+        online resouces to learn how to code. Free Code Camp and the Odin
+        Project taught me the basics of HTML, CSS, and Javascript and this
+        is where I felt something different than normally learning
+        something new. I liken it to finally being able to scratch an
+        itch, letting out a big sneeze that was bothering you, or how your
+        body feels diectly after an intense workout. I felt challeneged
+        but also excited because I knew I was only at the tip of the
+        iceberg. I told myself I would code everyday and through
+        deliberate practice improve with each iteration.
