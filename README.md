@@ -43,3 +43,38 @@ Through the years, I continued playing video games, got an email
         but also excited because I knew I was only at the tip of the
         iceberg. I told myself I would code everyday and through
         deliberate practice improve with each iteration.
+
+I continued my web development journey learning React as well as
+        other technologies essential to creating complex applications
+        like: Postgresql / MogoDB, Docker, Redis, Jest / Vitest, CI / CD,
+        etc. In my opinion, coding is beautiful because it forces you to
+        peceive problems / obstacles differently, break them down into
+        manageable pieces, and create abstractions. Coding has altered the
+        way I see the world and see common patterns found in coding in the
+        real world. Besides being on the computer, I enjoy going on walks
+        with my girlfriend, working out, playing with our cats Blu and
+        Salem, reading, and trying new restaurants.
+
+
+There is Japanese saying: 生きがい or Ikigai - it roughly
+        translates to your reason for being or your bliss. It can be
+        described as the action that combines what you are good at, love,
+        what the world needs and what you can be compensated for.
+
+I believe coding is my **Ikigai**
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

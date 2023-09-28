@@ -112,7 +112,8 @@ export default function About() {
         There is Japanese saying: 生きがい or Ikigai - it roughly
         translates to your reason for being or your bliss. It can be
         described as the action that combines what you are good at, love,
-        what the world needs and what you can be compensated for.</p>
+        what the world needs and what you can be compensated for.
+        </p>
         <p>
         I believe coding is my <strong>Ikigai</strong>      
         </p>
