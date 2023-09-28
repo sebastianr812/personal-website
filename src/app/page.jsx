@@ -1,3 +1,5 @@
+'use client';
+
 import Image from 'next/image'
 import Link from 'next/link'
 import clsx from 'clsx'
@@ -7,24 +9,21 @@ import { Card } from '@/components/Card'
 import { Container } from '@/components/Container'
 import {
   GitHubIcon,
-  InstagramIcon,
   LinkedInIcon,
-  TwitterIcon,
-  DiscordIcon,
 } from '@/components/SocialIcons'
 import logoAirbnb from '@/images/logos/airbnb.svg'
 import logoDiscord from '@/images/logos/discord.svg'
 import logoCrownClothing from '@/images/logos/crown-clothing.svg'
 import logoPlanetaria from '@/images/logos/planetaria.svg'
 import logoCms from '@/images/logos/cms.svg'
-import logoStarbucks from '@/images/logos/starbucks.svg'
-import image1 from '@/images/photos/image-1.jpg'
-import image2 from '@/images/photos/image-2.jpg'
-import image3 from '@/images/photos/image-3.jpg'
-import image4 from '@/images/photos/image-4.jpg'
-import image5 from '@/images/photos/image-5.jpg'
+import logoCmsBlack from '@/images/logos/cms-black.svg'
+import image1 from '@/images/photos/blu-image.jpeg'
+import image2 from '@/images/photos/steak-image.jpeg'
+import image3 from '@/images/photos/seb-si-image.jpeg'
+import image4 from '@/images/photos/espresso-image.jpeg'
+import image5 from '@/images/photos/salem-image.jpeg'
 import { formatDate } from '@/lib/formatDate'
-import { getAllArticles } from '@/lib/getAllArticles'
+import { useTheme } from 'next-themes'
 
 function MailIcon(props) {
   return (
@@ -133,6 +132,7 @@ function SocialLink({ icon: Icon, ...props }) {
 }
 
 function Resume() {
+    const {theme} = useTheme();
   let resume = [
     {
       company: `Sesons Catering & Special Events`,
@@ -159,7 +159,7 @@ function Resume() {
     {
       company: 'Ecommerce-CMS',
       title: 'Developer',
-      logo: logoCms,
+      logo: theme === 'light' ? logoCmsBlack : logoCms,
       start: '2023',
     },
     {
@@ -243,8 +243,9 @@ function Photos() {
   )
 }
 
-export default async function Home() {
+export default  function Home() {
   // let articles = (await getAllArticles()).slice(0, 4)
+const {theme} = useTheme();
 
   return (
     <>
@@ -255,10 +256,10 @@ export default async function Home() {
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
             I'm Sebastian Rojas, a software engineer based in Northern New
-            Jersey. My passion for web development stems from my natural
-            curiosity to learn and the appreciation of the different
-            technologies that must be meticulasly chosen and work together in
-            order to create a software application.
+            Jersey. My passion for web development stems from my  curiosity to 
+            learn and the appreciation of the different technologies that must 
+            work together and be meticulously chosen to create a software 
+            application
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink icon={MailIcon} href="/" />
