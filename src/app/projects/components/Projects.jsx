@@ -33,7 +33,8 @@ const projects = [
     description:
       `Content management system which allows store owners to add collections,
       set items for sale for the collections and have the consumer website 
-      update accordingly`,
+      update accordingly. Admins also have the ability to view statistics
+      about their store and make adjustments accordingly.`,
     link: { 
         href: 'https://ecommerce-admin-pi-olive.vercel.app/', 
         label: 'e-commerce-admin.app' 
@@ -43,8 +44,10 @@ const projects = [
   {
     name: 'Crown-Clothing',
     description:
-      `Front-end website linked to the CMS, allows users to view products,
-      add items to their cart and checkout using Stripe`,
+      `A dynamic front-end website integrated with a content management system. 
+      Implemented features that enable users to seamlessly browse and add products to their cart,
+      while ensuring persistent data across multiple sessions. Integrated Stripe as a secure payment 
+      processor, providing users with a seamless and secure checkout experience.`,
     link: { 
         href: 'https://ecommerce-store-olive.vercel.app/', 
         label: 'e-commerce-store.app' 
@@ -58,8 +61,7 @@ const projects = [
       based on categories, availibility, and amount of guests allowed. 
       Homeowners are allowed to upload a property and set dates available for
       rent. Users are able to favorite a property and have them saved for 
-      future reference as welll as renting a property using Stripe.
-      `,
+      future reference.`,
     link: { 
         href: 'https://rental-clone-six.vercel.app/',
         label: 'airbnb-clone.app' 
