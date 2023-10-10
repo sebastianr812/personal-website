@@ -5,11 +5,9 @@ import clsx from 'clsx'
 import { Container } from '@/components/Container'
 import {
   GitHubIcon,
-  InstagramIcon,
   LinkedInIcon,
-  TwitterIcon,
 } from '@/components/SocialIcons'
-import portraitImage from '@/images/portrait.jpg'
+import portraitImage from '@/images/photos/seb-fullbody.jpeg'
 import ikigaiImage from '@/images/photos/ikigai.webp'
 
 function SocialLink({ className, href, children, icon: Icon }) {

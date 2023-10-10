@@ -57,11 +57,11 @@ const projects = [
   {
     name: 'Airbnb-Clone',
     description:
-      `Clone of the Airbnb website features include: filtering properties
-      based on categories, availibility, and amount of guests allowed. 
-      Homeowners are allowed to upload a property and set dates available for
-      rent. Users are able to favorite a property and have them saved for 
-      future reference.`,
+      `A full-stack web application utilizing React, Node.js, and MongoDB. Implemented
+advanced filltering functionality, allowing users to easily search and browse properties based on categories,
+availability, and the number of guests allowed. Enabled homeowners to upload their properties and set
+available rental dates. Enhanced user experience by implementing a favorite feature, allowing users to save
+properties for future reference.`,
     link: { 
         href: 'https://rental-clone-six.vercel.app/',
         label: 'airbnb-clone.app' 
@@ -71,11 +71,11 @@ const projects = [
   {
     name: 'Discord-Clone',
     description:
-      `Clone of the popular chat application Discord. Web app allows users
-      to interact in realtime. Users can create servers, create channels within
-      a server and modify the type of the channel: text, audio, video. Besides
-      communicating in channels, users can have one on one conversations and have
-      infinite scrolling capabilities for an optimized user experience.`,
+      `A web application that replicates the features of 
+      the popular chat application Discord. Users can create servers, channels, and 
+      modify channel types (text, audio, video) for seamless communication. Implemented 
+      real-time functionality using Web sockets for instant messaging and one-on-one conversations.
+      Improved user experience with innite scrolling capabilities for optimized navigation.`,
     link: {
         href: 'https://discord-clone-production-eec0.up.railway.app/',
         label: 'discord-clone.app' 
@@ -86,7 +86,7 @@ const projects = [
   return (
     <SimpleLayout
       title="Things I’ve made trying to put my dent in the universe."
-      intro="I’ve worked on tons of little projects over the years but these are the ones that I’m most proud of. Many of them are open-source, so if you see something that piques your interest, check out the code and contribute if you have ideas for how it can be improved."
+      intro="I’ve worked on tons of little projects over the years but these are the ones that I’m most proud of. My favorite part of building applications is the process of starting small and slowly interating on-top of it in order to develop a complex application."
     >
       <ul
         role="list"
