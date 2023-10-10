@@ -7,12 +7,15 @@ about me as well as some of my proudest projects.
 - HTML
 - CSS
 - Javascript
+- Typescript
 - Node.js
 - React.js
-- PostgresQl / MongoDb
+- PostgresSQl / MongoDb
 - Redis 
 - Docker
 - Jest / Vitest
+- CI/CD
+- git
 
 ### About me
 
