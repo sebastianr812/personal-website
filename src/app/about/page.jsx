@@ -62,7 +62,7 @@ export default function About() {
         </div>
         <div className="lg:order-first lg:row-span-2">
         <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-        I'm Sebastian Rojas. I live in New Jersey and love to learn.
+        I&apos;m Sebastian Rojas. I live in New Jersey and love to learn.
         </h1>
         <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
         <p>
@@ -81,8 +81,8 @@ export default function About() {
         (which I still have to this day), I got to experience Aol
         Messenger and the beginnings of Facebook and Youtube. Fast forward
         to 2020 and this is where my passion for computer programming /
-        web development started. I was searching on Google "best jobs in
-        2020" and found software engineering to be a common answer between
+        web development started. I was searching on Google &quot;best jobs in
+        2020&quot; and found software engineering to be a common answer between
         the articles I read. After further researching, I began to use
         online resouces to learn how to code. Free Code Camp and the Odin
         Project taught me the basics of HTML, CSS, and Javascript and this

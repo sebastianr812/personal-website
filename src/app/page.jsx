@@ -246,8 +246,6 @@ function Photos() {
 }
 
 export default  function Home() {
-  // let articles = (await getAllArticles()).slice(0, 4)
-const {theme} = useTheme();
 
   return (
     <>
@@ -257,7 +255,7 @@ const {theme} = useTheme();
             Software engineer, eternal student, and cat dad
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I'm Sebastian Rojas, a software engineer based in Northern New
+            I&apos;m Sebastian Rojas, a software engineer based in Northern New
             Jersey. My passion for web development stems from my  curiosity to 
             learn and the appreciation of the different technologies that must 
             work together and be meticulously chosen to create a software 
