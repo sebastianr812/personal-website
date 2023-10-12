@@ -8,6 +8,7 @@ import logoAirbnb from '@/images/logos/airbnb.svg'
 import logoDiscord from '@/images/logos/discord.svg'
 import logoCrownClothing from '@/images/logos/crown-clothing.svg'
 import logoCms from '@/images/logos/cms.svg';
+import quillImg from "@/images/quill.png";
 import logoCmsBlack from '@/images/logos/cms-black.svg';
 import { useTheme } from 'next-themes';
 
@@ -28,13 +29,27 @@ export default function Projects() {
     const {theme} = useTheme();
 
 const projects = [
+    {
+        name: "Quill",
+        description: `A revolutionary web application that utilizes 
+        artificial intelligence to analyze and provide intelligent responses based on uploaded PDFs. 
+        Leveraged cutting-edge technologies to enable seamless PDF uploading and integrated a user-friendly chatbot interface 
+        for interactive communication with the AI. Implemented features such as infinite scrolling for 
+        effortless navigation, a free plan to allow users to experience the product, and a secure paid 
+        plan that utilizes Stripe for seamless payment processing. `,
+        link: {
+            href: "https://quill-eosin.vercel.app/",
+            label: "quill-eosin.vercel.app"
+        },
+        logo: quillImg
+    },
   {
     name: 'E-Commerce Admin CMS',
     description:
-      `Content management system which allows store owners to add collections,
-      set items for sale for the collections and have the consumer website 
-      update accordingly. Admins also have the ability to view statistics
-      about their store and make adjustments accordingly.`,
+      `Robust content management system that empowers store owners to effortlessly add collections,
+      manage inventory, and update the consumer website in real-time. Utilized cutting-edge technologies 
+      to provide admins with comprehensive statistics and analytics, enabling data-driven decision-making for 
+      optimizing store performance.`,
     link: { 
         href: 'https://ecommerce-admin-pi-olive.vercel.app/', 
         label: 'e-commerce-admin.app' 
@@ -97,8 +112,10 @@ properties for future reference.`,
             <div className="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
               <Image
                 src={project.logo}
+                width={project.name === "Quill" ? 500 : null}
+                height={project.name === "Quill" ? 500 : null}
                 alt=""
-                className="h-8 w-8"
+                className={project.name === "Quill" ? "h-8 w-8 rounded-full" : "h-8 w-8"}
                 unoptimized
               />
             </div>
