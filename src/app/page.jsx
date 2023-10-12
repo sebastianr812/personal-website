@@ -15,6 +15,7 @@ import logoAirbnb from '@/images/logos/airbnb.svg'
 import logoDiscord from '@/images/logos/discord.svg'
 import logoCrownClothing from '@/images/logos/crown-clothing.svg'
 import logoPlanetaria from '@/images/logos/planetaria.svg'
+import logoQuill from "@/images/quill.png";
 import logoCms from '@/images/logos/cms.svg'
 import logoCmsBlack from '@/images/logos/cms-black.svg'
 import image1 from '@/images/photos/blu-image.jpeg'
@@ -147,15 +148,9 @@ function Resume() {
       },
     },
     {
-      company: 'Airbnb-Clone',
+      company: "Quill",
       title: 'Developer',
-      logo: logoAirbnb,
-      start: '2022',
-    },
-    {
-      company: 'Discord-Clone',
-      title: 'Developer',
-      logo: logoDiscord,
+      logo: logoQuill,
       start: '2023',
     },
     {
@@ -169,6 +164,12 @@ function Resume() {
       title: 'Developer',
       logo: logoCrownClothing,
       start: '2023',
+   },
+    {
+      company: 'Airbnb-Clone',
+      title: 'Developer',
+      logo: logoAirbnb,
+      start: '2022',
     },
   ]
 
@@ -182,7 +183,7 @@ function Resume() {
         {resume.map((role, roleIndex) => (
           <li key={roleIndex} className="flex gap-4">
             <div className="relative mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
-              <Image src={role.logo} alt="" className="h-7 w-7" unoptimized />
+              <Image src={role.logo} alt="" className={role.company === "Quill" ? "h-7 w-7 rounded-full": "h-7 w-7"  } unoptimized />
             </div>
             <dl className="flex flex-auto flex-wrap gap-x-2">
               <dt className="sr-only">Company</dt>
