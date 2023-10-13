@@ -126,7 +126,7 @@ export default function About() {
         Follow on GitHub
         </SocialLink>
         <SocialLink
-        href="https://www.linkedin.com/in/sebastian-rojas-ruiz-812013200/"
+        href="www.linkedin.com/in/sebastian-rojas-812013200"
         icon={LinkedInIcon}
         className="mt-4"
         >
