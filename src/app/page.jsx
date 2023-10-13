@@ -270,7 +270,7 @@ export default  function Home() {
               icon={GitHubIcon}
             />
             <SocialLink
-              href="https://www.linkedin.com/in/sebastian-rojas-ruiz-812013200/"
+              href="https://linkedin.com/in/sebastian-rojas-812013200"
               aria-label="Follow on LinkedIn"
               icon={LinkedInIcon}
             />
