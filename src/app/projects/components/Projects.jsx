@@ -38,7 +38,7 @@ const projects = [
         effortless navigation, a free plan to allow users to experience the product, and a secure paid 
         plan that utilizes Stripe for seamless payment processing. `,
         link: {
-            href: "https://quill-jc2l8j9sw-sebastianr812.vercel.app/",
+            href: "https://quill-k7gd7btsx-sebastianr812.vercel.app/",
             label: "quill-eosin.vercel.app"
         },
         logo: quillImg
