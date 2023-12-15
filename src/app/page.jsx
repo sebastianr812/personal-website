@@ -12,7 +12,6 @@ import {
   LinkedInIcon,
 } from '@/components/SocialIcons'
 import logoAirbnb from '@/images/logos/airbnb.svg'
-import logoDiscord from '@/images/logos/discord.svg'
 import logoCrownClothing from '@/images/logos/crown-clothing.svg'
 import logoPlanetaria from '@/images/logos/planetaria.svg'
 import logoQuill from "@/images/quill.png";
@@ -26,7 +25,7 @@ import image5 from '@/images/photos/salem-image.jpeg'
 import { formatDate } from '@/lib/formatDate'
 import { useTheme } from 'next-themes'
 
-const RESUME_AWS_URL="https://seb-resume.s3.amazonaws.com/pdfs/sebastian-rojas-resume-v3.pdf"
+const RESUME_AWS_URL="https://seb-resume.s3.amazonaws.com/pdfs/sebastian-rojas-resume-v14.pdf"
 
 function MailIcon(props) {
   return (
