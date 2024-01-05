@@ -25,7 +25,7 @@ import image5 from '@/images/photos/salem-image.jpeg'
 import { formatDate } from '@/lib/formatDate'
 import { useTheme } from 'next-themes'
 
-const RESUME_AWS_URL="https://seb-resume.s3.amazonaws.com/pdfs/sebastian-rojas-resume-v14.pdf"
+const RESUME_AWS_URL="https://seb-resume.s3.amazonaws.com/pdfs/sebastian-rojas-resume-v15.pdf";
 
 function MailIcon(props) {
   return (
