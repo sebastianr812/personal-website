@@ -256,11 +256,10 @@ export default  function Home() {
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
             I&apos;m Sebastian Rojas, a software engineer based in Northern New
-            Jersey. My passion for web development stems from my  curiosity to 
-            learn and the appreciation of the different technologies that must 
-            work together and be meticulously chosen to create a software 
-            application
-          </p>
+            Jersey. My passion for web development stems from my curiosity to 
+            learn and the appreciation of technologies that make 
+            building software applications possible.
+      </p>
           <div className="mt-6 flex gap-6">
             <SocialLink icon={MailIcon} href="/" />
             <SocialLink
